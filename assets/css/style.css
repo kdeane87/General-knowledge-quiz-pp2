@@ -18,3 +18,11 @@ body {
     left: 50%;
     border-radius: 0.6em;
 }
+
+#q+a {
+    display: flex;
+    align-content: space-between;
+    align-items: baseline;
+    flex-direction: column;
+    padding: 20px;
+}
