@@ -19,10 +19,9 @@ body {
     border-radius: 0.6em;
 }
 
-#q+a {
+#questions {
     display: flex;
-    align-content: space-between;
-    align-items: baseline;
+    flex-wrap: wrap;
     flex-direction: column;
-    padding: 20px;
+    justify-content: center;
 }
