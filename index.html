@@ -13,11 +13,13 @@
     <section> 
         <div id="quiz-container"> 
 
-            <div id="questions">
-                <p id="q"></p>
-                <button data-type="a" id="ans1" onclick="checkAnswer('a')"></button>
-                <button data-type="b" id="ans2" onclick="checkAnswer('b')"></button>
-                <button data-type="c" id="ans3" onclick="checkAnswer('c')"></button>
+            
+                <div id="question-container" class="hide">
+                    <div id="questions">Question</div>
+                <button data-type="a" id="ans1" onclick="checkAnswer('a')">answer1</button>
+                <button data-type="b" id="ans2" onclick="checkAnswer('b')">answer2</button>
+                <button data-type="c" id="ans3" onclick="checkAnswer('c')">answer3</button>
+            </div>
             </div>
             <div class="score-area">
                 <p class="scores">Correct Answers <span id="score">0</span></p>
