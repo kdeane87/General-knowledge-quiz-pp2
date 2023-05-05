@@ -1,3 +1,5 @@
+//Declare constants for DOM elements
+
 const qArea = document.getElementById("questions");
 const correctScore = document.getElementById("score");
 const incorrectScore = document.getElementById("incorrect");
@@ -133,8 +135,8 @@ document.addEventListener("DOMContentLoaded", function() {
           if (this.getAttribute("data-type") === "a") {
               alert("You clicked Answer a!");
           } else {
-              let gameType = this.getAttribute("data-type");
-              alert(`You clicked Answer ${gameType}!`);
+              let choice = this.getAttribute("data-type");
+              alert(`You clicked Answer ${choice}!`);
           }
       });
   }
