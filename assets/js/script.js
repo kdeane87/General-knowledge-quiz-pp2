@@ -28,11 +28,12 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
-
+startButton.addEventListener('click', runGame);
 
 
 function runGame() {
-  
+  startButton.classList.add('hide')
+  questionContainerElement.classList.remove('hide')
 }
 
 
