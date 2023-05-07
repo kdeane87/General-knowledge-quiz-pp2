@@ -16,10 +16,9 @@
             
                 <div id="question-container" class="hide">
                     <div id="questions">Question</div>
-                <button data-type="a" id="ans1" onclick="checkAnswer('a')">answer1</button>
-                <button data-type="b" id="ans2" onclick="checkAnswer('b')">answer2</button>
-                <button data-type="c" id="ans3" onclick="checkAnswer('c')">answer3</button>
-            </div>
+                <button data-type="a" class="ans-btn" onclick="checkAnswer('a')">answer1</button>
+                <button data-type="b" class="ans-btn" onclick="checkAnswer('b')">answer2</button>
+                <button data-type="c" class="ans-btn" onclick="checkAnswer('c')">answer3</button>
             </div>
             <div class="score-area">
                 <p class="scores">Correct Answers <span id="score">0</span></p>
@@ -28,8 +27,8 @@
         </div>
         <div class="controls">
             <button id="start-btn" class="start-btn btn">Start</button>
-            <button id="next-btn" class="next-btn btn hide">Next</button>
         </div>
+    </div>
     </section>
 
     <script src="assets/js/script.js"></script>

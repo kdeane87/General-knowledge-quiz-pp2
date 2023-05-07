@@ -1,10 +1,10 @@
 //Declare constants for DOM elements
 
 const startButton = document.getElementById('start-btn');
-const qArea = document.getElementById("questions");
+const questionArea = document.getElementById("questions");
 const correctScore = document.getElementById("score");
 const incorrectScore = document.getElementById("incorrect");
-
+const questionContainerElement = document.getElementById('question-container');
 
  //List of questions and answers for the quiz
 
