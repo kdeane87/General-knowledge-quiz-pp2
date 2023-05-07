@@ -7,7 +7,7 @@ const incorrectScore = document.getElementById("incorrect");
 const questionContainerElement = document.getElementById('question-container');
 const answerButtonsElement = document.getElementById('answer-buttons');
 
-let randomQuestionArray, currentQuestion;
+let randomQuestionsArray, currentQuestion;
  
 
  
