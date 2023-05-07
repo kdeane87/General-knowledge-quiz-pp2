@@ -32,8 +32,9 @@ startButton.addEventListener('click', runGame);
 
 
 function runGame() {
-  startButton.classList.add('hide')
-  questionContainerElement.classList.remove('hide')
+  startButton.classList.add('hide');
+  questionContainerElement.classList.remove('hide');
+  console.log('game running');
 }
 
 
