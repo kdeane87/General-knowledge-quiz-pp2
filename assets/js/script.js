@@ -7,7 +7,8 @@ const incorrectScore = document.getElementById("incorrect");
 const questionContainerElement = document.getElementById('question-container');
 const answerButtonsElement = document.getElementById('answer-buttons');
 
- //List of questions and answers for the quiz
+let randomQuestionArray, currentQuestion;
+ 
 
  
 // Wait for the DOM to finish loading before running the game
@@ -34,8 +35,10 @@ startButton.addEventListener('click', runGame);
 function runGame() {
   startButton.classList.add('hide');
   questionContainerElement.classList.remove('hide');
+  randomQuestionsArray = questions.sort(() => Math.random() - .5);
+currentQuestion = 0;
   console.log('game running');
-  
+  nextQuestion();
 }
 
 
@@ -48,15 +51,15 @@ function incrementScore() {
 }
 
 function incrementWrongAnswer() {
-
+ 
 }
 
 function displayQuestion(question) {
- 
+  questionArea.innerText = question.question
   }
 
   function nextQuestion() {
-  
+  displayQuestion(randomQuestionsArray[currentQuestion])
   }
 
 function displayAnswers() {
