@@ -56,7 +56,7 @@ function displayQuestion(questions) {
     for (let i = 0; i < questions.length; i++) {
       console.log(questions[i]);
       }
-  
+      questionArea.innerText = listOfQuestions[0];
   
   }
 
