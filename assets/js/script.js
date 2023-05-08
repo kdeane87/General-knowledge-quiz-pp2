@@ -54,10 +54,8 @@ function incrementWrongAnswer() {
 function displayQuestion(questions) {
     for (let i = 0; i < questions.length; i++) {
       console.log(questions[i]);
-      displayQuestion(listOfQuestions);
-
-  }
-  console.log(displayQuestion(questions));
+      }
+  
   
   }
 
@@ -65,8 +63,9 @@ function displayQuestion(questions) {
 
   }
 
-function displayAnswers() {
-
+function displayAnswers(answers) {
+  for (let i = 0; i < answers.length; i++) 
+    console.log(answers[i]);
 }
 
 
@@ -76,3 +75,4 @@ const listOfQuestions = [
   "Which American president became known as 'Tricky Dicky'?",
   "Which insect lives in a Formicary?",
 ];
+
