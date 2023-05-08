@@ -5,7 +5,7 @@ const questionArea = document.getElementById("questions");
 const correctScore = document.getElementById("score");
 const incorrectScore = document.getElementById("incorrect");
 const questionContainerElement = document.getElementById('question-container');
-const answerButtonsElement = document.getElementById('answer-buttons');
+const answerButtonsElement = document.getElementsByClassName('ans-btn');
 
 let randomQuestionsArray, currentQuestion;
  
@@ -56,7 +56,7 @@ function incrementWrongAnswer() {
 function displayQuestion(question) {
   questionArea.innerText = question.question
   }
-  console.log(displayQuestion);
+  console.log(displayerbaetQuestion);
 
   function nextQuestion() {
   displayQuestion(randomQuestionsArray[currentQuestion])
