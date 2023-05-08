@@ -31,7 +31,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 startButton.addEventListener('click', runGame);
 
-
 function runGame() {
   startButton.classList.add('hide');
   questionContainerElement.classList.remove('hide');
@@ -57,26 +56,31 @@ function incrementWrongAnswer() {
 function displayQuestion(question) {
   questionArea.innerText = question.question
   }
+  console.log(displayQuestion);
 
   function nextQuestion() {
   displayQuestion(randomQuestionsArray[currentQuestion])
   }
 
 function displayAnswers() {
-
+answerButtonsElement.innerText = answers.answer;
 }
-
+console.log(displayAnswers);
 
 
  let questions = [
   {
       question: 'Blondie was the name of the dog belonging to which dictator?',
-      answers: [
+      }
+]
+
+let answers = [
+  {
+     answers: [
           {text: 'Hitler', correct: true},
           {text: 'Mussolini', correct: false},
           {text: 'Stalin', correct: false}
       ]
-
-
   }
 ]
+
