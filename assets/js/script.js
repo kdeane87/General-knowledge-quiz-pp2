@@ -6,6 +6,7 @@ const correctScore = document.getElementById("score");
 const incorrectScore = document.getElementById("incorrect");
 const questionContainerElement = document.getElementById('question-container');
 const answerButtonsElement = document.getElementsByClassName('ans-btn');
+const rules = document.getElementById('rules');
 
 let randomQuestionsArray, currentQuestion;
  
@@ -34,6 +35,7 @@ startButton.addEventListener('click', runGame);
 
 function runGame() {
   startButton.classList.add('hide');
+  rules.classList.add('hide');
   questionContainerElement.classList.remove('hide');
   console.log('game running');
   displayQuestion(listOfQuestions);
