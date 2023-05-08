@@ -13,6 +13,7 @@ let randomQuestionsArray, currentQuestion;
  
 // Wait for the DOM to finish loading before running the game
 // Get the button elements and add event listeners to them
+// Code used from love maths project
 
 document.addEventListener("DOMContentLoaded", function() {
   let buttons = document.getElementsByClassName("ans-btn");
