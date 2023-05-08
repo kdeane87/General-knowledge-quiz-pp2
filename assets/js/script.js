@@ -34,10 +34,8 @@ startButton.addEventListener('click', runGame);
 function runGame() {
   startButton.classList.add('hide');
   questionContainerElement.classList.remove('hide');
-  randomQuestionsArray = questions.sort(() => Math.random() - .5);
-currentQuestion = 0;
   console.log('game running');
-  nextQuestion();
+  displayQuestion(listOfQuestions);
 }
 
 
@@ -53,34 +51,28 @@ function incrementWrongAnswer() {
  
 }
 
-function displayQuestion(question) {
-  questionArea.innerText = question.question
+function displayQuestion(questions) {
+    for (let i = 0; i < questions.length;) {
+      console.log(questions[i]);
+      displayQuestion(listOfQuestions);
+
   }
-  console.log(displayerbaetQuestion);
+  console.log(displayQuestion(questions));
+  
+  }
 
   function nextQuestion() {
-  displayQuestion(randomQuestionsArray[currentQuestion])
+
   }
 
 function displayAnswers() {
-answerButtonsElement.innerText = answers.answer;
+
 }
-console.log(displayAnswers);
 
 
- let questions = [
-  {
-      question: 'Blondie was the name of the dog belonging to which dictator?',
-      }
-]
 
-let answers = [
-  {
-     answers: [
-          {text: 'Hitler', correct: true},
-          {text: 'Mussolini', correct: false},
-          {text: 'Stalin', correct: false}
-      ]
-  }
-]
-
+const listOfQuestions = [
+  "The Chinese year 2023 is represented by which animal?",
+  "Which American president became known as 'Tricky Dicky'?",
+  "Which insect lives in a Formicary?",
+];
