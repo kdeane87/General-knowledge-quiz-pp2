@@ -52,7 +52,7 @@ function incrementWrongAnswer() {
 }
 
 function displayQuestion(questions) {
-    for (let i = 0; i < questions.length;) {
+    for (let i = 0; i < questions.length; i++) {
       console.log(questions[i]);
       displayQuestion(listOfQuestions);
 
