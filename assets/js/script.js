@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (this.getElementById("answer-container")) {
         alert(`You Answered ${choice}!`);
       } else {
-        let choice = this.getElementById("answer-container");
+        let choice = this.getElementById("button");
         alert(`You Answered ${choice}!`);
       }
     });
