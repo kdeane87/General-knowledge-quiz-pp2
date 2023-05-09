@@ -8,6 +8,9 @@ const questionContainerElement = document.getElementById('question-container');
 const answerButtonsElement = document.getElementsByClassName('ans-btn');
 const rules = document.getElementById('rules');
 
+let currentQuestionIndex = 0;
+let score = 0;
+
 
  
 
@@ -37,8 +40,10 @@ function runGame() {
   startButton.classList.add('hide');
   rules.classList.add('hide');
   questionContainerElement.classList.remove('hide');
-  console.log('game running');
+  currentQuestionIndex = 0;
+  score = 0;
   displayQuestion(listOfQuestions);
+  console.log('game running');
 }
 
 
@@ -58,7 +63,7 @@ function displayQuestion(questions) {
     for (let i = 0; i < questions.length; i++) {
       console.log(questions[i]);
       }
-      questionArea.innerText = listOfQuestions[0];
+      questionArea.innerText = listOfQuestions.question;
   
   }
 
