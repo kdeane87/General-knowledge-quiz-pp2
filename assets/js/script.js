@@ -43,10 +43,27 @@ function runGame() {
   questionContainerElement.classList.remove('hide');
   currentQuestionIndex = 0;
   score = 0;
-  displayQuestion(listOfQuestions);
+  displayQuestion();
   console.log('game running');
 }
 
+
+
+
+function displayQuestion() {
+    let currentQuestion = listOfQuestions[currentQuestionIndex];
+    let questionNo = currentQuestionIndex = 1;
+    questionArea.innerHTML = questionNo + ". " + currentQuestion.question;
+    
+    currentQuestion.answers.forEach(answer => {
+      const button = document.createElement('button');
+      button.innerHTML = answer.text;
+      button.classList.add('btn')
+      answerButton.appendChild(button);
+    });
+    
+  }
+  
 
 function checkAnswer() {
 
@@ -59,23 +76,6 @@ function incrementScore() {
 function incrementWrongAnswer() {
  
 }
-
-function displayQuestion() {
-    let currentQuestion = listOfQuestions[currentQuestionIndex];
-    let questionNo = currentQuestionIndex = 1;
-    questionArea.innerHTML = questionNo = ". " + currentQuestion.question;
-  }
-
-  function nextQuestion() {
-
-  }
-
-function displayAnswers(answers) {
-  for (let i = 0; i < answers.length; i++) 
-    console.log(answers[i]);
-}
-
-
 
 const listOfQuestions = [
     {
