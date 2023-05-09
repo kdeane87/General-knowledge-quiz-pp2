@@ -49,7 +49,7 @@ answers: [
  
 // Wait for the DOM to finish loading before running the game
 // Get the button elements and add event listeners to them
-// Code I used from Love Maths project
+// Code used from Love Maths project
 
 document.addEventListener("DOMContentLoaded", function() {
   let buttons = document.getElementsByClassName("ans-btn");
