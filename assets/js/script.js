@@ -108,13 +108,15 @@ function resetState() {
   while (answerContainer.firstChild) {
     answerContainer.removeChild(answerContainer.firstChild);
   }
+  console.log(resetState);
 }
+
 
 document.addEventListener("DOMContentLoaded", function () {
   let buttons = document.getElementById("answer-container");
 
-  for (let button of buttons) {
-    button.addEventListener("click", function () {
+  for (let i = 0; i < buttons.lenght; i++) {
+    answer - container.addEventListener("click", function () {
       if (this.getElementById("answer-container")) {
         alert(`You Answered ${choice}!`);
       } else {
