@@ -1,6 +1,7 @@
 //Declare constants for DOM elements
 
 const startButton = document.getElementById('start-btn');
+const nextButton = document.getElementById('next-btn');
 const questionArea = document.getElementById("questions");
 const correctScore = document.getElementById("score");
 const incorrectScore = document.getElementById("incorrect");
