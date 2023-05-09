@@ -60,12 +60,10 @@ function incrementWrongAnswer() {
  
 }
 
-function displayQuestion(questions) {
-    for (let i = 0; i < questions.length; i++) {
-      console.log(questions[i]);
-      }
-      questionArea.innerText = listOfQuestions.question;
-  
+function displayQuestion() {
+    let currentQuestion = listOfQuestions[currentQuestionIndex];
+    let questionNo = currentQuestionIndex = 1;
+    questionArea.innerHTML = questionNo = ". " + currentQuestion.question;
   }
 
   function nextQuestion() {
