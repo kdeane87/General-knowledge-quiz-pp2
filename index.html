@@ -16,9 +16,11 @@
             
                 <div id="question-container" class="hide">
                     <div id="questions">Question</div>
+                    <div id="answer-container">
                 <button data-type="a" class="ans-btn" onclick="checkAnswer('a')">answer1</button>
                 <button data-type="b" class="ans-btn" onclick="checkAnswer('b')">answer2</button>
                 <button data-type="c" class="ans-btn" onclick="checkAnswer('c')">answer3</button>
+            </div>
             </div>
             <div class="score-area">
                 <p class="scores">Correct Answers <span id="score">0</span></p>
@@ -27,7 +29,7 @@
             <div class="controls">
                 <p id="rules">General Knowledge Quiz<br>Rules<br></p>
                 <button id="start-btn" class="start-btn btn">Start</button>
-                <button id="next-btn" class="next-btn btn">Next</button>
+                <button id="next-btn" class="next-btn btn hide">Next</button>
             </div>
         </div>
        

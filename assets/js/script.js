@@ -8,11 +8,42 @@ const incorrectScore = document.getElementById("incorrect");
 const questionContainerElement = document.getElementById('question-container');
 const answerButtonsElement = document.getElementsByClassName('ans-btn');
 const rules = document.getElementById('rules');
+const answerContainer = document.getElementById('answer-container');
 
 let currentQuestionIndex = 0;
 let score = 0;
 
+/**
+ * list of quiz questions
+ */
 
+const listOfQuestions = [
+  {
+      question: "Blondie was the name of the dog belonging to which dictator?",
+      answers: [
+            {text: 'Stalin', correct: false},
+            {text: 'mussolini', correct: false},
+            {text: 'Hitler', correct: true},
+      ]
+  },
+  {
+    question: " Related to the llama, which South American mammal has long shaggy hair?",
+answers: [
+            {text: 'Alpaca', correct: true},
+            {text: 'Common opossum', correct: false},
+            {text: 'Silky anteater', correct: false},
+      ]
+  },
+  {
+     question: "According to the proverb, Necessity is the mother of…What?",
+     answers: [
+            {text: 'Creation', correct: false},
+            {text: 'Discovery', correct: false},
+            {text: 'Invention', correct: true},
+      ]
+  }]
+        
+     
  
 
  
@@ -51,6 +82,7 @@ function runGame() {
 
 
 function displayQuestion() {
+  resetState();
     let currentQuestion = listOfQuestions[currentQuestionIndex];
     let questionNo = currentQuestionIndex = 1;
     questionArea.innerHTML = questionNo + ". " + currentQuestion.question;
@@ -59,11 +91,11 @@ function displayQuestion() {
       const button = document.createElement('button');
       button.innerHTML = answer.text;
       button.classList.add('btn')
-      answerButton.appendChild(button);
+      answerContainer.appendChild(button);
     });
     
   }
-  
+  console.log(displayQuestion());
 
 function checkAnswer() {
 
@@ -77,30 +109,9 @@ function incrementWrongAnswer() {
  
 }
 
-const listOfQuestions = [
-    {
-        question: "Blondie was the name of the dog belonging to which dictator?",
-        answers: [
-              {text: 'Stalin', correct: false},
-              {text: 'mussolini', correct: false},
-              {text: 'Hitler', correct: true},
-        ]
-    },
-    {
-      question: " Related to the llama, which South American mammal has long shaggy hair?",
- answers: [
-              {text: 'Alpaca', correct: true},
-              {text: 'Common opossum', correct: false},
-              {text: 'Silky anteater', correct: false},
-        ]
-    },
-    {
-       question: "According to the proverb, Necessity is the mother of…What?",
-       answers: [
-              {text: 'Creation', correct: false},
-              {text: 'Discovery', correct: false},
-              {text: 'Invention', correct: true},
-        ]
-    }]
-          
-       
+function resetState() {
+  nextButton.classList.add('hide');
+  while(answerContainer.firstChild) {
+  answerContainer.removeChild(answerContainer.firstChild);
+}
+}
