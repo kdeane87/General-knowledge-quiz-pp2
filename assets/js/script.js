@@ -8,7 +8,7 @@ const questionContainerElement = document.getElementById('question-container');
 const answerButtonsElement = document.getElementsByClassName('ans-btn');
 const rules = document.getElementById('rules');
 
-let randomQuestionsArray, currentQuestion;
+
  
 
  
@@ -74,8 +74,29 @@ function displayAnswers(answers) {
 
 
 const listOfQuestions = [
-  "The Chinese year 2023 is represented by which animal?",
-  "Which American president became known as 'Tricky Dicky'?",
-  "Which insect lives in a Formicary?",
-];
-
+    {
+        question: "Blondie was the name of the dog belonging to which dictator?",
+        answers: [
+              {text: 'Stalin', correct: false},
+              {text: 'mussolini', correct: false},
+              {text: 'Hitler', correct: true},
+        ]
+    },
+    {
+      question: " Related to the llama, which South American mammal has long shaggy hair?",
+ answers: [
+              {text: 'Alpaca', correct: true},
+              {text: 'Common opossum', correct: false},
+              {text: 'Silky anteater', correct: false},
+        ]
+    },
+    {
+       question: "According to the proverb, Necessity is the mother of…What?",
+       answers: [
+              {text: 'Creation', correct: false},
+              {text: 'Discovery', correct: false},
+              {text: 'Invention', correct: true},
+        ]
+    }]
+          
+       
