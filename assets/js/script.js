@@ -106,21 +106,21 @@ function checkAnswer(e) {
   const selectedBtn = e.target;
   const isCorrect = selectedBtn.dataset.correct === "true";
   if (isCorrect) {
-    let choice = this.getElementsByClassName("btn");
-    alert(`You Answered ${choice}. That was the CORRECT Answer!`);
+    alert(`You Answered CORRECTLY!`);
     selectedBtn.classList.add("correct");
   } else {
-    alert(`You Answered ${choice}. That was the WRONG Answer!`);
+    alert(`WRONG ANSWER!!!!`);
     selectedBtn.classList.add("wrong");
   }
   Array.from(answerContainer.children).forEach(button => {
     if (button.dataset.correct === "true") {
       button.classList.add("correct");
+
     }
     button.disabled = true;
     console.log(checkAnswer);
   });
-
+  nextButton.classList.remove("hide")
 }
 
 function incrementScore() {}
