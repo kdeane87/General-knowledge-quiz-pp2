@@ -66,6 +66,118 @@ const listOfQuestions = [{
       },
     ],
   },
+  {
+    question: "Which politician famously said ‘Ich bin ein Berliner’?",
+    answers: [{
+        text: "Winston Churchill",
+        correct: false,
+      },
+      {
+        text: "JF Kennedy",
+        correct: true,
+      },
+      {
+        text: "Adolf Hitler",
+        correct: false,
+      },
+    ],
+  },
+  {
+    question: " In chemistry what is the smallest part of an element that can take part in a chemical reaction?",
+    answers: [{
+        text: "Atom",
+        correct: true,
+      },
+      {
+        text: "Electron",
+        correct: false,
+      },
+      {
+        text: "Microbe",
+        correct: false,
+      },
+    ],
+  },
+  {
+    question: " Which American president became known as ‘Tricky Dicky’?",
+    answers: [{
+        text: "Nixon",
+        correct: true,
+      },
+      {
+        text: "Clinton",
+        correct: false,
+      },
+      {
+        text: "Trump",
+        correct: false,
+      },
+    ],
+  },
+  {
+    question: " Which ‘C’ is an ornamental moulding running around the walls of a room near the ceiling?",
+    answers: [{
+        text: "Corner",
+        correct: false,
+      },
+      {
+        text: "crevice",
+        correct: false,
+      },
+      {
+        text: "Cornice",
+        correct: true,
+      },
+    ],
+  },
+  {
+    question: " The Chinese year 2023 is represented by which animal?",
+    answers: [{
+        text: "Rat",
+        correct: false,
+      },
+      {
+        text: "Dog",
+        correct: false,
+      },
+      {
+        text: "Rabbit",
+        correct: true,
+      },
+    ],
+  },
+  {
+    question: " Ganymede is the largest moon of which planet? ",
+    answers: [{
+        text: "Neptune",
+        correct: false,
+      },
+      {
+        text: "Pluto",
+        correct: false,
+      },
+      {
+        text: "Jupitor",
+        correct: true,
+      },
+    ],
+  },
+  {
+    question: "Which insect lives in a Formicary?",
+    answers: [{
+        text: "Mole",
+        correct: false,
+      },
+      {
+        text: "Tarruntula",
+        correct: false,
+      },
+      {
+        text: "Ant",
+        correct: true,
+      },
+    ],
+  },
 ];
 
 // Wait for the DOM to finish loading before running the game
