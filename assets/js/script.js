@@ -86,8 +86,7 @@ function runGame() {
 function displayQuestion() {
   resetState();
   let currentQuestion = listOfQuestions[currentQuestionIndex];
-  currentQuestionIndex++;
-  let questionNo = (currentQuestionIndex = 1);
+  let questionNo = currentQuestionIndex + 1;
   questionArea.innerHTML = questionNo + ". " + currentQuestion.question;
 
   currentQuestion.answers.forEach((answer) => {
