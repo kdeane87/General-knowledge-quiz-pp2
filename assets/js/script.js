@@ -13,108 +13,111 @@ const answerContainer = document.getElementById("answer-container");
 let currentQuestionIndex = 0;
 let score = 0;
 
+/**
+ * list of quiz questions
+ */
+
+const listOfQuestions = [{
+    question: "Blondie was the name of the dog belonging to which dictator?",
+    answers: [{
+        text: "Stalin",
+        correct: false,
+      },
+      {
+        text: "mussolini",
+        correct: false,
+      },
+      {
+        text: "Hitler",
+        correct: true,
+      },
+    ],
+  },
+  {
+    question: " Related to the llama, which South American mammal has long shaggy hair?",
+    answers: [{
+        text: "Alpaca",
+        correct: true,
+      },
+      {
+        text: "Common opossum",
+        correct: false,
+      },
+      {
+        text: "Silky anteater",
+        correct: false,
+      },
+    ],
+  },
+  {
+    question: "According to the proverb, Necessity is the mother of…What?",
+    answers: [{
+        text: "Creation",
+        correct: false,
+      },
+      {
+        text: "Discovery",
+        correct: false,
+      },
+      {
+        text: "Invention",
+        correct: true,
+      },
+    ],
+  },
+];
+
+// Wait for the DOM to finish loading before running the game
+// Get the button elements and add event listeners to them
+// Code used from Love Maths project
+
+
+function runGame() {
+  startButton.classList.add("hide");
+  rules.classList.add("hide");
+  questionContainerElement.classList.remove("hide");
+  currentQuestionIndex = 0;
+  score = 0;
+  displayQuestion();
+  console.log(runGame);
+}
+
+function displayQuestion() {
+  resetState();
+  let currentQuestion = listOfQuestions[currentQuestionIndex];
+  let questionNo = (currentQuestionIndex = 1);
+  questionArea.innerHTML = questionNo + ". " + currentQuestion.question;
+
+  currentQuestion.answers.forEach((answer) => {
+    const button = document.createElement("button");
+    button.innerHTML = answer.text;
+    button.classList.add("btn");
+    answerContainer.appendChild(button);
+    if (answer.correct) {
+      button.dataset.correct = answer.correct;
+    }
+    button.addEventListener("click", checkAnswer);
+  });
+  console.log(displayQuestion);
+}
+
+function checkAnswer() {}
+
+function incrementScore() {}
+
+function incrementWrongAnswer() {}
+
+function resetState() {
+  nextButton.classList.add("hide");
+  while (answerContainer.firstChild) {
+    answerContainer.removeChild(answerContainer.firstChild);
+  }
+  console.log(resetState);
+}
+
+
 document.addEventListener("DOMContentLoaded", function () {
   let buttons = document.getElementById("answer-container");
-  /**
-   * list of quiz questions
-   */
-
-  const listOfQuestions = [{
-      question: "Blondie was the name of the dog belonging to which dictator?",
-      answers: [{
-          text: "Stalin",
-          correct: false,
-        },
-        {
-          text: "mussolini",
-          correct: false,
-        },
-        {
-          text: "Hitler",
-          correct: true,
-        },
-      ],
-    },
-    {
-      question: " Related to the llama, which South American mammal has long shaggy hair?",
-      answers: [{
-          text: "Alpaca",
-          correct: true,
-        },
-        {
-          text: "Common opossum",
-          correct: false,
-        },
-        {
-          text: "Silky anteater",
-          correct: false,
-        },
-      ],
-    },
-    {
-      question: "According to the proverb, Necessity is the mother of…What?",
-      answers: [{
-          text: "Creation",
-          correct: false,
-        },
-        {
-          text: "Discovery",
-          correct: false,
-        },
-        {
-          text: "Invention",
-          correct: true,
-        },
-      ],
-    },
-  ];
-
-  // Wait for the DOM to finish loading before running the game
-  // Get the button elements and add event listeners to them
-  // Code used from Love Maths project
-
-
-  function runGame() {
-    startButton.classList.add("hide");
-    rules.classList.add("hide");
-    questionContainerElement.classList.remove("hide");
-    currentQuestionIndex = 0;
-    score = 0;
-    displayQuestion();
-    console.log(runGame);
-  }
-
-  function displayQuestion() {
-    resetState();
-    let currentQuestion = listOfQuestions[currentQuestionIndex];
-    let questionNo = (currentQuestionIndex = 1);
-    questionArea.innerHTML = questionNo + ". " + currentQuestion.question;
-
-    currentQuestion.answers.forEach((answer) => {
-      const button = document.createElement("button");
-      button.innerHTML = answer.text;
-      button.classList.add("btn");
-      answerContainer.appendChild(button);
-    });
-    console.log(displayQuestion);
-  }
-
-  function checkAnswer() {}
-
-  function incrementScore() {}
-
-  function incrementWrongAnswer() {}
-
-  function resetState() {
-    nextButton.classList.add("hide");
-    while (answerContainer.firstChild) {
-      answerContainer.removeChild(answerContainer.firstChild);
-    }
-    console.log(resetState);
-  }
-
-
-
 
   for (let i = 0; i < buttons.lenght; i++) {
     buttons.addEventListener("click", function () {
