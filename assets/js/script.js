@@ -104,6 +104,11 @@ function displayQuestion() {
 function checkAnswer(e) {
   const selectedBtn = e.target;
   const isCorrect = selectedBtn.dataset.correct === "true";
+  if (isCorrect) {
+    selectedBtn.classList.add("correct");
+  } else {
+    selectedBtn.classList.add("wrong");
+  }
 }
 
 function incrementScore() {}
