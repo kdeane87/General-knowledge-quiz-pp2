@@ -81,3 +81,13 @@ button,
 .btn:hover {
     color: red;
 }
+
+.correct {
+    background-color: green;
+    color: antiquewhite;
+}
+
+.wrong {
+    background-color: red;
+    color: antiquewhite;
+}

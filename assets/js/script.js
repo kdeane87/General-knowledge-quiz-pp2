@@ -105,8 +105,10 @@ function checkAnswer(e) {
   const selectedBtn = e.target;
   const isCorrect = selectedBtn.dataset.correct === "true";
   if (isCorrect) {
+    alert(`You Answered ${choice}. That was the CORRECT Answer!`);
     selectedBtn.classList.add("correct");
   } else {
+    alert(`You Answered ${choice}. That was the WRONG Answer!`);
     selectedBtn.classList.add("wrong");
   }
 }
