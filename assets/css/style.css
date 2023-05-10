@@ -4,7 +4,7 @@ body {
 
 #quiz-container {
     background-color: rgb(20, 20, 220, 0.8);
-    height: 50rem;
+    height: 35rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,25 +34,33 @@ button,
 .btn {
     padding-top: 15px;
     background-color: white;
-    height: 80px;
+    height: 60px;
     font-size: 2rem;
     margin: 0 30px;
     display: flex;
     width: 80%;
     justify-content: center;
     height: 100;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
-.start-btn,
+.start-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    height: 70px;
+    width: 200px;
+
+}
+
 .next-btn {
     font-size: 1.5rem;
     font-weight: bold;
     padding: 10px 20px;
-    height: 100px;
+    height: 60px;
     width: 200px;
-
 }
+
 
 .controls {
     display: flex;
@@ -67,9 +75,11 @@ button,
 }
 
 #rules {
-    float: left;
+
+    justify-content: center;
     color: antiquewhite;
-    font-size: 40px;
+    font-size: 2rem;
+    text-align: center;
 }
 
 .score-area {
@@ -81,7 +91,8 @@ button,
 }
 
 .btn:hover {
-    color: red;
+    color: antiquewhite;
+    background-color: darkslategrey;
 }
 
 .correct {
