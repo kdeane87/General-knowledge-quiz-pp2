@@ -101,7 +101,10 @@ function displayQuestion() {
   console.log(displayQuestion);
 }
 
-function checkAnswer() {}
+function checkAnswer(e) {
+  const selectedBtn = e.target;
+  const isCorrect = selectedBtn.dataset.correct === "true";
+}
 
 function incrementScore() {}
 
