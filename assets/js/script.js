@@ -11,7 +11,8 @@ const rules = document.getElementById("rules");
 const answerContainer = document.getElementById("answer-container");
 
 let currentQuestionIndex = 0;
-let score = 0;
+let correct = 0;
+let incorrect = 0;
 
 /**
  * list of quiz questions
@@ -135,6 +136,14 @@ function resetState() {
   console.log(resetState);
 }
 
+function clickNextButton() {
+  currentQuestionIndex++;
+  if (currentQuestionIndex < listOfQuestions.lenght) {
+    displayQuestion();
+  }
+};
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
   let buttons = document.getElementById("answer-container");
@@ -148,6 +157,14 @@ document.addEventListener("DOMContentLoaded", function () {
         alert(`You Answered ${choice}!`);
       }
     });
+  }
+});
+
+nextButton.addEventListener("click", () => {
+  if (currentQuestionIndex < listOfQuestions.length) {
+    clickNextButton();
+  } else {
+    runGame();
   }
 });
 
