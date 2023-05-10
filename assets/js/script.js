@@ -79,6 +79,7 @@ function runGame() {
   currentQuestionIndex = 0;
   score = 0;
   displayQuestion();
+  checkAnswer();
   console.log(runGame);
 }
 
@@ -105,12 +106,21 @@ function checkAnswer(e) {
   const selectedBtn = e.target;
   const isCorrect = selectedBtn.dataset.correct === "true";
   if (isCorrect) {
+    let choice = this.getElementsByClassName("btn");
     alert(`You Answered ${choice}. That was the CORRECT Answer!`);
     selectedBtn.classList.add("correct");
   } else {
     alert(`You Answered ${choice}. That was the WRONG Answer!`);
     selectedBtn.classList.add("wrong");
   }
+  Array.from(answerContainer.children).forEach(button => {
+    if (button.dataset.correct === "true") {
+      button.classList.add("correct");
+    }
+    button.disabled = true;
+    console.log(checkAnswer);
+  });
+
 }
 
 function incrementScore() {}
