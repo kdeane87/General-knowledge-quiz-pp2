@@ -4,7 +4,7 @@ body {
 
 #quiz-container {
     background-color: rgb(20, 20, 220, 0.8);
-    height: 35rem;
+    height: 50rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,22 +19,23 @@ body {
     border-radius: 0.6em;
 }
 
+
 #questions {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     color: antiquewhite;
-    font-size: 20px;
+    font-size: 2rem;
+    text-align: center;
 }
 
 button,
 .btn {
-    padding-top: 10px;
+    padding-top: 15px;
     background-color: white;
-    border: 10px solid;
     height: 80px;
-    font-size: 3.2rem;
+    font-size: 2rem;
     margin: 0 30px;
     display: flex;
     width: 80%;
@@ -75,7 +76,8 @@ button,
     position: fixed;
     color: antiquewhite;
     bottom: 5px;
-
+    right: 10%;
+    font-size: 2rem;
 }
 
 .btn:hover {
