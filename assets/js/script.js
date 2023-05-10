@@ -78,7 +78,6 @@ function runGame() {
   rules.classList.add("hide");
   questionContainerElement.classList.remove("hide");
   currentQuestionIndex = 0;
-  score = 0;
   displayQuestion();
   checkAnswer();
   console.log(runGame);
@@ -87,6 +86,7 @@ function runGame() {
 function displayQuestion() {
   resetState();
   let currentQuestion = listOfQuestions[currentQuestionIndex];
+  currentQuestionIndex++;
   let questionNo = (currentQuestionIndex = 1);
   questionArea.innerHTML = questionNo + ". " + currentQuestion.question;
 
@@ -138,8 +138,10 @@ function resetState() {
 
 function clickNextButton() {
   currentQuestionIndex++;
-  if (currentQuestionIndex < listOfQuestions.lenght) {
+  if (currentQuestionIndex < listOfQuestions.length) {
     displayQuestion();
+  } else {
+    alert(`there was a problem`);
   }
 };
 
@@ -147,7 +149,6 @@ function clickNextButton() {
 
 document.addEventListener("DOMContentLoaded", function () {
   let buttons = document.getElementById("answer-container");
-
   for (let i = 0; i < buttons.lenght; i++) {
     buttons.addEventListener("click", function () {
       if (this.getElementById("answer-container")) {
@@ -160,12 +161,15 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+
+
 nextButton.addEventListener("click", () => {
   if (currentQuestionIndex < listOfQuestions.length) {
     clickNextButton();
   } else {
-    runGame();
+    alert(`game over`);
   }
 });
+
 
 startButton.addEventListener("click", runGame);
