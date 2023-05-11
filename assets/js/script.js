@@ -329,7 +329,7 @@ function checkAnswer(e) {
     button.disabled = true;
     console.log(checkAnswer);
   });
-  setTimeout(clickNextButton, 1);
+  setTimeout(clickNextButton, 1000);
 }
 
 /**
