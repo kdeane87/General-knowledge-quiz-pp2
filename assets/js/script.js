@@ -221,7 +221,7 @@ const listOfQuestions = [{
         correct: false,
       },
       {
-        text: "Mojito",
+        text: "Sazerac",
         correct: false,
       },
     ],
@@ -366,7 +366,7 @@ nextButton.addEventListener("click", () => {
   if (currentQuestionIndex < listOfQuestions.length) {
     clickNextButton();
   } else {
-    alert(`game over`);
+    runGame();
   }
 });
 
