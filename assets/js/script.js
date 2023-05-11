@@ -267,6 +267,7 @@ const listOfQuestions = [{
 
 function runGame() {
   startButton.classList.add("hide");
+  score = 0;
   rules.classList.add("hide");
   questionContainerElement.classList.remove("hide");
   currentQuestionIndex = 0;
