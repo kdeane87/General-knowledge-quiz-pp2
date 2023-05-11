@@ -328,7 +328,7 @@ function checkAnswer(e) {
     button.disabled = true;
     console.log(checkAnswer);
   });
-  setTimeout(clickNextButton, 1000);
+  setTimeout(clickNextButton, 1);
 }
 
 /**
@@ -341,6 +341,7 @@ function displayScore() {
   questionArea.innerHTML = `You scored ${score} out of ${listOfQuestions.length}!`;
   nextButton.innerHTML = "Try Again";
   nextButton.classList.remove('hide');
+  throwWarning();
 }
 
 /**
@@ -378,6 +379,16 @@ nextButton.addEventListener("click", () => {
     runGame();
   }
 });
+
+function throwWarning() {
+  const warning = document.createElement('button');
+  warning.classList.add('warning-button');
+  warning.innerText = 'WARNING DO NOT PRESS!';
+  questionArea.appendChild(warning);
+  warning.addEventListener('click', () => {
+    alert('warning');
+  });
+};
 
 //Listens for click on start button. Calls main quiz loop.
 

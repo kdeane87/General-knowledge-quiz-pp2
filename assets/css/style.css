@@ -30,6 +30,7 @@ body {
     color: antiquewhite;
     font-size: 2rem;
     text-align: center;
+    align-items: center;
 }
 
 /*Styling for all buttons*/
@@ -113,4 +114,12 @@ disabled*/
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.warning-button {
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    color: antiquewhite;
+
 }
