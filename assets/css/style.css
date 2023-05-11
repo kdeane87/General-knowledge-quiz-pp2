@@ -1,7 +1,9 @@
+/*Background image for quiz*/
 body {
     background-image: url(../images/quz\ bg.jpg);
 }
 
+/*Style for quiz container in center of page*/
 #quiz-container {
     background-color: rgba(64, 60, 60, 0.8);
     height: 35rem;
@@ -19,7 +21,7 @@ body {
     border-radius: 0.6em;
 }
 
-
+/*Style the questions*/
 #questions {
     display: flex;
     flex-wrap: wrap;
@@ -30,6 +32,7 @@ body {
     text-align: center;
 }
 
+/*Styling for all buttons*/
 button,
 .btn {
     padding-top: 15px;
@@ -44,6 +47,7 @@ button,
     margin-top: 40px;
 }
 
+/*Styling for start button*/
 .start-btn {
     font-size: 1.5rem;
     font-weight: bold;
@@ -53,6 +57,7 @@ button,
 
 }
 
+/*Styling for next button*/
 .next-btn {
     font-size: 1.5rem;
     font-weight: bold;
@@ -61,7 +66,7 @@ button,
     width: 200px;
 }
 
-
+/*Adds style to the controls and places corectly on page*/
 .controls {
     display: flex;
     justify-content: center;
@@ -70,10 +75,12 @@ button,
     flex-direction: column;
 }
 
+/*Hides elements when called*/
 .hide {
     display: none;
 }
 
+/*Lays out quiz and rules text*/
 #rules {
 
     justify-content: center;
@@ -82,29 +89,26 @@ button,
     text-align: center;
 }
 
-.score-area {
-    position: fixed;
-    color: antiquewhite;
-    bottom: 5px;
-    right: 10%;
-    font-size: 2rem;
-}
-
+/*Styles hover feature on buttons while button is not
+disabled*/
 .btn:hover:not(:disabled) {
     color: antiquewhite;
     background-color: darkslategrey;
 }
 
+/*Turns answer button green when a button is clicked*/
 .correct {
     background-color: rgba(91, 209, 91, 0.4);
     color: antiquewhite;
 }
 
+/*Turns button red if answer is wrong*/
 .wrong {
     background-color: rgba(250, 58, 58, 0.4);
     color: antiquewhite;
 }
 
+/*Centeres answer buttons within answer container*/
 #answer-container {
     display: flex;
     flex-direction: column;
