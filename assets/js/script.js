@@ -342,7 +342,18 @@ function displayScore() {
   questionArea.innerHTML = `You scored ${score} out of ${listOfQuestions.length}!`;
   nextButton.innerHTML = "Try Again";
   nextButton.classList.remove('hide');
-  throwWarning();
+  if (score < 10) {
+    swal(`Not too bad but try harder next time`);
+  }
+  if (score > 10) {
+    swal(`Very impressive, but theres still room for improvement!`);
+  }
+  if (score === 15) {
+    swal(`Amazing, you got everything right!!!!`);
+  }
+  if (score < 5) {
+    swal(`Not great, time to pick up a few books :)`);
+  }
   console.log(displayScore);
 }
 
@@ -383,16 +394,6 @@ nextButton.addEventListener("click", () => {
   }
 });
 
-function throwWarning() {
-  const warning = document.createElement('button');
-  warning.classList.add('warning-button');
-  warning.innerText = 'WARNING DO NOT PRESS!';
-  questionArea.appendChild(warning);
-  warning.addEventListener('click', () => {
-    alert('warning');
-  });
-  console.log(throwWarning);
-};
 
 //Listens for click on start button. Calls main quiz loop.
 
