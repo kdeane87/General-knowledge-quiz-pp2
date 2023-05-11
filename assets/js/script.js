@@ -11,8 +11,8 @@ const rules = document.getElementById("rules");
 const answerContainer = document.getElementById("answer-container");
 
 let currentQuestionIndex = 0;
-let correct = 0;
-let incorrect = 0;
+let score = 0;
+
 
 /**
  * list of quiz questions
@@ -299,8 +299,10 @@ function checkAnswer(e) {
   const selectedBtn = e.target;
   const isCorrect = selectedBtn.dataset.correct === "true";
   if (isCorrect) {
+
     // alert(`You Answered CORRECTLY!`);
     selectedBtn.classList.add("correct");
+    score++;
   } else {
     // alert(`WRONG ANSWER!!!!`);
     selectedBtn.classList.add("wrong");
@@ -316,9 +318,14 @@ function checkAnswer(e) {
   setTimeout(clickNextButton, 2500);
 }
 
-function incrementScore() {}
+function displayScore() {
+  resetState();
+  answerContainer.innerHTML = `You scored ${score} out of ${listOfQuestions.length}!`;
+  nextButton.innerHTML = "Try Again";
+  nextButton.classList.remove('hide');
+}
 
-function incrementWrongAnswer() {}
+
 
 function resetState() {
   nextButton.classList.add("hide");
@@ -333,7 +340,7 @@ function clickNextButton() {
   if (currentQuestionIndex < listOfQuestions.length) {
     displayQuestion();
   } else {
-    alert(`there was a problem`);
+    displayScore();
   }
 };
 
