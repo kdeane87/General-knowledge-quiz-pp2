@@ -3,10 +3,7 @@
 const startButton = document.getElementById("start-btn");
 const nextButton = document.getElementById("next-btn");
 const questionArea = document.getElementById("questions");
-const correctScore = document.getElementById("score");
-const incorrectScore = document.getElementById("incorrect");
 const questionContainerElement = document.getElementById("question-container");
-const answerButtonsElement = document.getElementsByClassName("ans-btn");
 const rules = document.getElementById("rules");
 const answerContainer = document.getElementById("answer-container");
 
@@ -259,7 +256,7 @@ const listOfQuestions = [{
       },
     ]
   }
-]
+];
 
 /**
  * Main loop for running the quiz.
@@ -382,7 +379,7 @@ function clickNextButton() {
     displayScore();
   }
   console.log(clickNextButton);
-};
+}
 
 //Listens for click on next button.
 
