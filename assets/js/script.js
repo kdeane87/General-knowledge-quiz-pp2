@@ -137,12 +137,12 @@ const listOfQuestions = [{
         correct: false,
       },
       {
-        text: "Dog",
-        correct: false,
-      },
-      {
         text: "Rabbit",
         correct: true,
+      },
+      {
+        text: "Dog",
+        correct: false,
       },
     ],
   },
@@ -178,7 +178,88 @@ const listOfQuestions = [{
       },
     ],
   },
-];
+  {
+    question: "Arabica, Robusta and Liberica are types of which bean?",
+    answers: [{
+        text: "Coffee",
+        correct: true,
+      },
+      {
+        text: "Kidney",
+        correct: false,
+      },
+      {
+        text: "Soy",
+        correct: false,
+      },
+    ],
+  },
+  {
+    question: "According to the British idiom, if you take credit for someone's work, or take limelight where it's not deserved, you said to be stealing their what?",
+    answers: [{
+        text: "Credit",
+        correct: false,
+      },
+      {
+        text: "Thunder",
+        correct: true,
+      },
+      {
+        text: "Work",
+        correct: false,
+      },
+    ],
+  },
+  {
+    question: " Which classic cocktail, often said to be a mojito without the mint, takes it's name from a small village in Cuba?",
+    answers: [{
+        text: "Daiquirí",
+        correct: true,
+      },
+      {
+        text: "Martini",
+        correct: false,
+      },
+      {
+        text: "Mojito",
+        correct: false,
+      },
+    ],
+  },
+  {
+    question: "The 'O Captain! My Captain' scene features in which Robin Williams film?",
+    answers: [{
+        text: "Hook",
+        correct: false,
+      },
+      {
+        text: "Dead Poets Society",
+        correct: true,
+      },
+      {
+        text: "Mrs Doubtfire",
+        correct: false,
+      }
+
+    ]
+  },
+  {
+    question: " Eric Yuan is CEO of which video communication technology company which shot to prominence in 2020?",
+    answers: [{
+        text: "Zoom",
+        correct: true,
+      },
+      {
+        text: "Skype",
+        correct: false,
+      },
+      {
+        text: "Facetime",
+        correct: false,
+      },
+    ]
+  }
+]
 
 // Wait for the DOM to finish loading before running the game
 // Get the button elements and add event listeners to them
