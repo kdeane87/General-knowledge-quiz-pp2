@@ -261,10 +261,9 @@ const listOfQuestions = [{
   }
 ]
 
-// Wait for the DOM to finish loading before running the game
-// Get the button elements and add event listeners to them
-// Code used from Love Maths project
-
+/**
+ * Main loop for running the quiz.
+ */
 
 function runGame() {
   startButton.classList.add("hide");
@@ -275,6 +274,12 @@ function runGame() {
   checkAnswer();
   console.log(runGame);
 }
+
+/**
+ * Displays questions and answers in sequence.
+ * Creates button containing answers.
+ * Calls checkAnswer once buttn is clicked.
+ */
 
 function displayQuestion() {
   resetState();
@@ -294,6 +299,14 @@ function displayQuestion() {
   });
   console.log(displayQuestion);
 }
+
+/**
+ * Checks that the answer is correct.
+ * If correct answer turns green and score is incremented.
+ * If wrong answer turns red.
+ * Buttons are disabled after a button is clicked.
+ * setTimeout clicks hidden next question once it times out.
+ */
 
 function checkAnswer(e) {
   const selectedBtn = e.target;
@@ -318,6 +331,11 @@ function checkAnswer(e) {
   setTimeout(clickNextButton, 2500);
 }
 
+/**
+ * Clears questions and displays score.
+ * Removes hidden next buton and adds text 'Try Again'.
+ */
+
 function displayScore() {
   resetState();
   questionArea.innerHTML = `You scored ${score} out of ${listOfQuestions.length}!`;
@@ -325,7 +343,9 @@ function displayScore() {
   nextButton.classList.remove('hide');
 }
 
-
+/**
+ * 
+ */
 
 function resetState() {
   nextButton.classList.add("hide");
