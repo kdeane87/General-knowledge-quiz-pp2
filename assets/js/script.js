@@ -342,6 +342,7 @@ function displayScore() {
   nextButton.innerHTML = "Try Again";
   nextButton.classList.remove('hide');
   throwWarning();
+  console.log(displayScore);
 }
 
 /**
@@ -368,6 +369,7 @@ function clickNextButton() {
   } else {
     displayScore();
   }
+  console.log(clickNextButton);
 };
 
 //Listens for click on next button.
@@ -388,6 +390,7 @@ function throwWarning() {
   warning.addEventListener('click', () => {
     alert('warning');
   });
+  console.log(throwWarning);
 };
 
 //Listens for click on start button. Calls main quiz loop.
