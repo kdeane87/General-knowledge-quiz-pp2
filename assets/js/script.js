@@ -328,7 +328,7 @@ function checkAnswer(e) {
     button.disabled = true;
     console.log(checkAnswer);
   });
-  setTimeout(clickNextButton, 2500);
+  setTimeout(clickNextButton, 1000);
 }
 
 /**
@@ -344,7 +344,7 @@ function displayScore() {
 }
 
 /**
- * 
+ * Removes the previous answers.
  */
 
 function resetState() {
@@ -355,6 +355,11 @@ function resetState() {
   console.log(resetState);
 }
 
+/**
+ * When next button is clicked, runs through the lenght of
+ * listOfQuestions.
+ */
+
 function clickNextButton() {
   currentQuestionIndex++;
   if (currentQuestionIndex < listOfQuestions.length) {
@@ -364,23 +369,7 @@ function clickNextButton() {
   }
 };
 
-
-
-document.addEventListener("DOMContentLoaded", function () {
-  let buttons = document.getElementById("answer-container");
-  for (let i = 0; i < buttons.lenght; i++) {
-    buttons.addEventListener("click", function () {
-      if (this.getElementById("answer-container")) {
-        alert(`You Answered ${choice}!`);
-      } else {
-        let choice = this.getElementById("button");
-        alert(`You Answered ${choice}!`);
-      }
-    });
-  }
-});
-
-
+//Listens for click on next button.
 
 nextButton.addEventListener("click", () => {
   if (currentQuestionIndex < listOfQuestions.length) {
@@ -390,5 +379,6 @@ nextButton.addEventListener("click", () => {
   }
 });
 
+//Listens for click on start button. Calls main quiz loop.
 
 startButton.addEventListener("click", runGame);
