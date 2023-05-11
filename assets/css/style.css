@@ -90,7 +90,7 @@ button,
     font-size: 2rem;
 }
 
-.btn:hover {
+.btn:hover:not(:disabled) {
     color: antiquewhite;
     background-color: darkslategrey;
 }

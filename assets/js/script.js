@@ -232,7 +232,7 @@ function checkAnswer(e) {
     button.disabled = true;
     console.log(checkAnswer);
   });
-  nextButton.classList.remove("hide")
+  setTimeout(clickNextButton, 3000);
 }
 
 function incrementScore() {}
