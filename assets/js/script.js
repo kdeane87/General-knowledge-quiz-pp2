@@ -299,10 +299,10 @@ function checkAnswer(e) {
   const selectedBtn = e.target;
   const isCorrect = selectedBtn.dataset.correct === "true";
   if (isCorrect) {
-    alert(`You Answered CORRECTLY!`);
+    // alert(`You Answered CORRECTLY!`);
     selectedBtn.classList.add("correct");
   } else {
-    alert(`WRONG ANSWER!!!!`);
+    // alert(`WRONG ANSWER!!!!`);
     selectedBtn.classList.add("wrong");
   }
   Array.from(answerContainer.children).forEach(button => {
