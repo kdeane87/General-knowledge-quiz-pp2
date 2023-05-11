@@ -320,7 +320,7 @@ function checkAnswer(e) {
 
 function displayScore() {
   resetState();
-  answerContainer.innerHTML = `You scored ${score} out of ${listOfQuestions.length}!`;
+  questionArea.innerHTML = `You scored ${score} out of ${listOfQuestions.length}!`;
   nextButton.innerHTML = "Try Again";
   nextButton.classList.remove('hide');
 }
