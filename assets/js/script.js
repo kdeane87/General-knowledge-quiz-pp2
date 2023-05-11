@@ -41,7 +41,7 @@ const listOfQuestions = [{
         correct: true,
       },
       {
-        text: "Common opossum",
+        text: "Opossum",
         correct: false,
       },
       {
@@ -69,7 +69,7 @@ const listOfQuestions = [{
   {
     question: "Which politician famously said ‘Ich bin ein Berliner’?",
     answers: [{
-        text: "Winston Churchill",
+        text: "Churchill",
         correct: false,
       },
       {
@@ -77,7 +77,7 @@ const listOfQuestions = [{
         correct: true,
       },
       {
-        text: "Adolf Hitler",
+        text: "Hitler",
         correct: false,
       },
     ],
@@ -115,7 +115,7 @@ const listOfQuestions = [{
     ],
   },
   {
-    question: " Which ‘C’ is an ornamental moulding running around the walls of a room near the ceiling?",
+    question: " Which 'C' is an ornamental moulding running around the walls of a room near the ceiling?",
     answers: [{
         text: "Corner",
         correct: false,

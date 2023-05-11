@@ -104,3 +104,9 @@ button,
     background-color: red;
     color: antiquewhite;
 }
+
+#answer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
