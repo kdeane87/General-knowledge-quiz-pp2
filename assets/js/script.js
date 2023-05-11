@@ -195,7 +195,7 @@ const listOfQuestions = [{
     ],
   },
   {
-    question: "According to the British idiom, if you take credit for someone's work, or take limelight where it's not deserved, you said to be stealing their what?",
+    question: "If you take credit for someone's work, or take limelight where it's not deserved, you said to be stealing their what?",
     answers: [{
         text: "Credit",
         correct: false,
@@ -227,17 +227,17 @@ const listOfQuestions = [{
     ],
   },
   {
-    question: "The 'O Captain! My Captain' scene features in which Robin Williams film?",
+    question: "Which Beatles song includes the line 'When I was younger, so much younger than today'?",
     answers: [{
-        text: "Hook",
+        text: "Hello, Goodbye",
         correct: false,
       },
       {
-        text: "Dead Poets Society",
+        text: "Help",
         correct: true,
       },
       {
-        text: "Mrs Doubtfire",
+        text: "Yes it is",
         correct: false,
       }
 
@@ -313,7 +313,7 @@ function checkAnswer(e) {
     button.disabled = true;
     console.log(checkAnswer);
   });
-  setTimeout(clickNextButton, 3000);
+  setTimeout(clickNextButton, 2500);
 }
 
 function incrementScore() {}
