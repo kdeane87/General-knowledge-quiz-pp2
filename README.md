@@ -34,13 +34,13 @@ This website was created as part of my Full Stack Diploma course. It is a fully 
 ![Landing page image](assets/images/landing_page.png)
 
 
-**question Page**
+**Question Page**
 
 - Containes the questions and answers.
 
 - Quiz is now running.
 
-![running quiz image](assets/images/questions_page.png)
+![running quiz image](assets/images/questions.png)
 
 **Score Page**
 
@@ -48,7 +48,7 @@ This website was created as part of my Full Stack Diploma course. It is a fully 
 
 - Alert message is shown, message will be relevant to the score. 
 
-![Quiz results image](assets/images/score_page.png)
+![Quiz results image](assets/images/score.png)
 
 
 
@@ -110,7 +110,7 @@ This website was created as part of my Full Stack Diploma course. It is a fully 
 **Manual Testing**
 
 
-![Nav menu](assets/images/startbutton.jpg)
+![Start Button](assets/images/startbutton.png)
 
 
 Start Button
@@ -120,22 +120,26 @@ Start Button
 - Upon checking everything was as expected.
 
 
-![Map image](assets/images/map.png)
+![Answer Buttons](assets/images/ansbuttons.png)
 
 
-Map
+Answer Buttons
 
-- Check that map opens up in a new tab and in the correct location.
+- Check that on clicking the answer is selected.
+
+- Check that if wrong answer is chosen, button turns red and the correct answer appears as green.
+
+- Check that all buttons are disabled after choice has been made.
 
 - Upon checking everything was as expected.
 
 
-![Social media links](assets/images/social_media_links.png)
+![Try again button](assets/images/try_again.png)
 
 
-Social Media Links
+Try Again Button
 
-- Check that the links open in a new tab and is linked to the correct site.
+- Check that when clicked quiz restarts.
 
 - Upon checking everything was as expected.
 

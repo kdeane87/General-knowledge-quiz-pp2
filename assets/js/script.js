@@ -118,7 +118,7 @@ const listOfQuestions = [{
         correct: false,
       },
       {
-        text: "crevice",
+        text: "Crevice",
         correct: false,
       },
       {
