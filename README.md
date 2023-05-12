@@ -1,108 +1,235 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# General Knowledge Quiz
 
-Welcome kdeane87,
+This website was created as part of my Full Stack Diploma course. It is a fully interactive general knowledge quiz consisting of 15 multiple choice questions. The aim of the website is for people to test their quiz knowledge and have fun. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
 
-## Gitpod Reminders
+![Responsive image](assets/images/responsive_image.jpg)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
+## Features
 
-A blue button should appear to click: _Make Public_,
+**Start Button**
 
-Another blue button should appear to click: _Open Browser_.
+- Clicking on the Start Button starts the quiz and displays the first question and 3 possible answers.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- Clicking on one of the answers will confirm your answer choice.
 
-A blue button should appear to click: _Make Public_,
+- Once clicked buttons will then be disabled and your choice will turn either green(correct) or red(wrong).
 
-Another blue button should appear to click: _Open Browser_.
+- A hidden timer will be activated and next question and answers will be displayed after 1 sec.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- Once the array of questions are completed you will be shown your score out of 15.
 
-To log into the Heroku toolbelt CLI:
+- A alert message will display and a message will appear, depending on how you scored a different message will be displayed.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- A 'try again' button will also appear to restart the quiz.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
-------
 
-## Release History
+**Home Page**
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+- Displays the question box and start button.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+![Landing page image](assets)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+**Class schedule Page**
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+- Containes the weekly schedule of classes.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+![Schedule image](assets/images/weekly_schedule.png)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+**Book Trial Class Page**
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+- Containes a form to contact the club with questions or to book in for a trial class.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+- At the moment booking form is conected to code institute form dump (https://formdump.codeinstitute.net/). 
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+![Trial class image](assets/images/book_trial-class.png)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Running Tests
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+**Html Validation**
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+1) Open up workspace in Gitpod.
 
-------
+2) Open index.html and copy all code.
 
-## FAQ about the uptime script
+3) Open https://validator.w3.org/ in seperate tab.
 
-**Why have you added this script?**
+4) Click validate code by direct input.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+5) Paste code.
 
-**How will this affect me?**
+6) Click check button and wait for results.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+7) Repeat steps 2-6 for class-schedule.html and trial-class.html.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+8) Fix any issues in Gitpod workspace and re-test.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
 
-**So….?**
+**CSS Validation**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+1) Open up workspace in Gitpod.
 
-**Can I opt out?**
+2) Open style.css found in the assets folder and copy all code.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+3) Open https://jigsaw.w3.org/css-validator/ in a seperate tab.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+4) Click validate code by direct input.
 
-**Anything more?**
+5) Paste code.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+6) Click check button and wait for results.
 
----
+7) Fix any issues in Gitpod workspace and re-test.
 
-Happy coding!
+
+**Manual Testing**
+
+
+![Nav menu](assets/images/menu_image.png)
+
+
+Navigation
+
+- Check that the menu is linked with the correct page.
+
+- Upon checking everything was as expected.
+
+
+![Map image](assets/images/map.png)
+
+
+Map
+
+- Check that map opens up in a new tab and in the correct location.
+
+- Upon checking everything was as expected.
+
+
+![Social media links](assets/images/social_media_links.png)
+
+
+Social Media Links
+
+- Check that the links open in a new tab and is linked to the correct site.
+
+- Upon checking everything was as expected.
+
+
+![Booking form](assets/images/form_image.png)
+
+
+Booking Form
+
+- Check that form works as expected and links to https://formdump.codeinstitute.net/
+
+- Upon checking everything was as expected.
+
+- Update: https://formdump.codeinstitute.net/ seems to be down 31/03/2023.
+
+
+
+**Lighthouse**
+
+
+![lighthouse of Homepage](assets/images/lighthouse_1.png)
+
+![lighthouse of Schedule](assets/images/lighthouse_2.png)
+
+![lighthouse of booking](assets/images/lighthouse_3.png)
+
+
+**Accessibility**
+
+- All three pages were checked using https://wave.webaim.org/ and passed with no issues.
+
+
+## Libraries and Programmes
+
+- Git for version control.
+
+- Github to save and store the files for the website.
+
+- Google Fonts to import the fonts used on the website.
+
+- Font Awesome for the iconography on the website.
+
+- Google Devoloper Tools to troubleshoot and test features, solve issues with responsiveness and styling
+
+- W3C Validator- used for checking HTML and CSS for errors
+
+
+## Version control
+
+**Git commands**
+
+To push code from githod to github follow these instructions in the terminal;
+
+1) git add .
+
+2) Git commit -m "message about whats being added"
+
+3) git push
+
+
+## Deployment
+
+The site was deployed to GitHub Pages.
+
+1) Go to Github repo
+2) Click on "Settings"
+3) Click on "Pages"(tab on the left sidebar)
+4) Scroll to "Build and deployment"/"Source" section
+5) Find sub-section "Branch"
+6) From drop-down manu "none"/"select branch" choose source "main" and folder "/root"
+7) Click "Save"
+8) Wait until you can see a link for deployed page within Github Page section, this can take a while and once the page updates you will see a message:
+9) Your site is live at https://kdeane87.github.io/Kimura-jiu-jitsu/
+ 
+
+## Bugs
+
+- No bugs were detected after deployment
+
+
+
+## Credits
+
+- https://wave.webaim.org/- Used to test for accessibility.
+
+-  https://formdump.codeinstitute.net/- Used as form dump for booking form.
+
+- Google maps- Code used for map on homepage.
+
+- https://validator.w3.org/- Used for testing HTML.
+
+- https://jigsaw.w3.org/css-validator/- Used for testing CSS.
+
+- https://www.freeformatter.com/- Used to indent HTML.
+
+- https://www.freeformatter.com/css-beautifier.html- Used to Beautify CSS.
+
+- Shutterstock- Used for all images on homepage.
+
+- Pixels- Used for images on class schedule page and book trial class page.
+
+- Google fonts- Used for font
+
+- Font awesome- Used for icons
+
+- https://ui.dev/amiresponsive- Used for screenshots on readme.
+
+- Slack overflow- Used as reference.
+
+- Code institute Love Running- Used as referance.
+
+
+
+
+
+
