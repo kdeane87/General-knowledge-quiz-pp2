@@ -31,22 +31,24 @@ This website was created as part of my Full Stack Diploma course. It is a fully 
 
 - Displays the question box and start button.
 
-![Landing page image](assets)
+![Landing page image](assets/images/landing_page.png)
 
 
-**Class schedule Page**
+**question Page**
 
-- Containes the weekly schedule of classes.
+- Containes the questions and answers.
 
-![Schedule image](assets/images/weekly_schedule.png)
+- Quiz is now running.
 
-**Book Trial Class Page**
+![running quiz image](assets/images/questions_page.png)
 
-- Containes a form to contact the club with questions or to book in for a trial class.
+**Score Page**
 
-- At the moment booking form is conected to code institute form dump (https://formdump.codeinstitute.net/). 
+- Displays your score.
 
-![Trial class image](assets/images/book_trial-class.png)
+- Alert message is shown, message will be relevant to the score. 
+
+![Quiz results image](assets/images/score_page.png)
 
 
 
@@ -88,15 +90,32 @@ This website was created as part of my Full Stack Diploma course. It is a fully 
 7) Fix any issues in Gitpod workspace and re-test.
 
 
+**Javascript Validation**
+
+1) Open up workspace in Gitpod.
+
+2) Open script.js found in the assets folder and copy all code.
+
+3) Open https://jshint.com/ in a seperate tab.
+
+4) Paste code.
+
+5) Click configure button and wait for results.
+
+6) Fix any issues in Gitpod workspace and re-test.
+
+
+
+
 **Manual Testing**
 
 
-![Nav menu](assets/images/menu_image.png)
+![Nav menu](assets/images/startbutton.jpg)
 
 
-Navigation
+Start Button
 
-- Check that the menu is linked with the correct page.
+- Click the start button and confirm it starts quiz.
 
 - Upon checking everything was as expected.
 
