@@ -28,7 +28,7 @@ body {
     flex-direction: column;
     justify-content: center;
     color: antiquewhite;
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
     align-items: center;
 }
@@ -113,4 +113,10 @@ disabled*/
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/*Place footer fixed to bottom of page*/
+footer {
+    position: fixed;
+    bottom: 0px;
 }
