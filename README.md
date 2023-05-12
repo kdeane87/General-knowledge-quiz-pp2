@@ -157,12 +157,12 @@ Console.log()
 **Lighthouse**
 
 
-![lighthouse report](assets/images/lighthouse_test.png)
+![lighthouse report](assets/images/lighthouse.png)
 
 
 **Accessibility**
 
-- Quiz was checked using https://wave.webaim.org/ and had the following issues which dosent impact functionality and are not of particular importance for this particular javascript project.
+- Quiz was checked using https://wave.webaim.org/ and had the following issue which dosent impact functionality and are not of particular importance for this particular javascript project.
 
 ![webaim report](assets/images/webaim.png)
 
@@ -237,9 +237,13 @@ The site was deployed to GitHub Pages.
 
 - Code institute Love Maths- Used as referance.
 
-- Slack used for referance and inspiration.
+- Slack used for referance.
 
 - https://pubquizquestionshq.com/ used for the questions.
+
+- Used READme from my project 1 https://kdeane87.github.io/Kimura-jiu-jitsu/ as a template.
+
+
 
 
 
