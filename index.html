@@ -10,27 +10,30 @@
 </head>
 
 <body>
-    <section>
-        <!--Containes the quiz in center of landing page-->
-        <div id="quiz-container">
+    <main>
+        <section>
+            <!--Containes the quiz in center of landing page-->
+            <div id="quiz-container">
 
-            <!--Containes the quiz questions and answers-->
-            <div id="question-container" class="hide">
-                <div id="questions">Question</div>
-                <div id="answer-container">
-                    <button data-type="a" class="ans-btn" onclick="checkAnswer('a')">answer1</button>
-                    <button data-type="b" class="ans-btn" onclick="checkAnswer('b')">answer2</button>
-                    <button data-type="c" class="ans-btn" onclick="checkAnswer('c')">answer3</button>
+                <!--Containes the quiz questions and answers-->
+                <div id="question-container" class="hide">
+                    <div id="questions">Question</div>
+                    <div id="answer-container">
+                        <button data-type="a" class="ans-btn" onclick="checkAnswer('a')">answer1</button>
+                        <button data-type="b" class="ans-btn" onclick="checkAnswer('b')">answer2</button>
+                        <button data-type="c" class="ans-btn" onclick="checkAnswer('c')">answer3</button>
+                    </div>
+                </div>
+                <!--Containes start and next buttons-->
+                <div class="controls">
+                    <p id="rules">General Knowledge Quiz</p>
+                    <button id="start-btn" class="start-btn btn">Start</button>
+                    <button id="next-btn" class="next-btn btn hide">Next</button>
                 </div>
             </div>
-            <!--Containes start and next buttons-->
-            <div class="controls">
-                <p id="rules">General Knowledge Quiz</p>
-                <button id="start-btn" class="start-btn btn">Start</button>
-                <button id="next-btn" class="next-btn btn hide">Next</button>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
+    <footer></footer>
     <!--Link to js and sweetAlert js-->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="assets/js/script.js"></script>
