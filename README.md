@@ -4,7 +4,7 @@ This website was created as part of my Full Stack Diploma course. It is a fully 
 
 
 
-![Responsive image](assets/images/responsive_image.jpg)
+![Responsive image](assets/images/aimresponsive.png)
 
 
 ## Features
@@ -144,6 +144,15 @@ Try Again Button
 - Upon checking everything was as expected.
 
 
+Console.log()
+
+- All functions were tested using console.log.
+
+- One issue appeared but dosent impact the functioning of the quiz.
+
+![Console error](assets/images/console_error.png)
+
+
 
 **Lighthouse**
 
@@ -164,13 +173,13 @@ Try Again Button
 
 - Github to save and store the files for the website.
 
-- Google Fonts to import the fonts used on the website.
+- Google Devoloper Tools to troubleshoot and test features, solve issues with responsiveness and styling.
 
-- Font Awesome for the iconography on the website.
+- W3C Validator- used for checking HTML and CSS for errors.
 
-- Google Devoloper Tools to troubleshoot and test features, solve issues with responsiveness and styling
+- JSlint for testing javascript.
 
-- W3C Validator- used for checking HTML and CSS for errors
+- sweetalert.js.org for swal(alert).
 
 
 ## Version control
@@ -198,12 +207,17 @@ The site was deployed to GitHub Pages.
 6) From drop-down manu "none"/"select branch" choose source "main" and folder "/root"
 7) Click "Save"
 8) Wait until you can see a link for deployed page within Github Page section, this can take a while and once the page updates you will see a message:
-9) Your site is live at https://kdeane87.github.io/Kimura-jiu-jitsu/
+9) Your site is live at https://kdeane87.github.io/General-knowledge-quiz-pp2/
  
 
 ## Bugs
 
-- No bugs were detected after deployment
+- The following were detected after testing but do not impact the quiz.
+
+![webaim report](assets/images/webaim.png)
+
+![Console error](assets/images/console_error.png)
+
 
 
 
@@ -211,31 +225,21 @@ The site was deployed to GitHub Pages.
 
 - https://wave.webaim.org/- Used to test for accessibility.
 
--  https://formdump.codeinstitute.net/- Used as form dump for booking form.
-
-- Google maps- Code used for map on homepage.
-
 - https://validator.w3.org/- Used for testing HTML.
 
 - https://jigsaw.w3.org/css-validator/- Used for testing CSS.
 
-- https://www.freeformatter.com/- Used to indent HTML.
-
-- https://www.freeformatter.com/css-beautifier.html- Used to Beautify CSS.
-
-- Shutterstock- Used for all images on homepage.
-
-- Pixels- Used for images on class schedule page and book trial class page.
-
-- Google fonts- Used for font
-
-- Font awesome- Used for icons
+- Shutterstock- Used for background image.
 
 - https://ui.dev/amiresponsive- Used for screenshots on readme.
 
-- Slack overflow- Used as reference.
+- Stack overflow- Used as reference.
 
-- Code institute Love Running- Used as referance.
+- Code institute Love Maths- Used as referance.
+
+- Slack used for referance and inspiration.
+
+- https://pubquizquestionshq.com/ used for the questions.
 
 
 
