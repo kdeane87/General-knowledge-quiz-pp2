@@ -308,14 +308,12 @@ function displayQuestion() {
 
 function checkAnswer(e) {
   const selectedBtn = e.target;
+  console.log(selectedBtn);
   const isCorrect = selectedBtn.dataset.correct === "true";
   if (isCorrect) {
-
-    // alert(`You Answered CORRECTLY!`);
     selectedBtn.classList.add("correct");
     score++;
   } else {
-    // alert(`WRONG ANSWER!!!!`);
     selectedBtn.classList.add("wrong");
   }
   Array.from(answerContainer.children).forEach(button => {

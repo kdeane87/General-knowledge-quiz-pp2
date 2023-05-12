@@ -243,6 +243,16 @@ The site was deployed to GitHub Pages.
 
 - Used READme from my project 1 https://kdeane87.github.io/Kimura-jiu-jitsu/ as a template.
 
+- The following youtube tutorials were referenced to, in order to help me grasp javascript better.
+
+- https://www.youtube.com/watch?v=OiWLIe_Cz6E
+
+- https://www.youtube.com/watch?v=1ydfKDwsYbU&t=96s
+
+- https://www.youtube.com/watch?v=N9vEXAWPynU&t=3s
+
+- https://www.youtube.com/watch?v=49pYIMygIcU&t=272s
+
 
 
 

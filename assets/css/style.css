@@ -1,6 +1,8 @@
 /*Background image for quiz*/
 body {
     background-image: url(../images/quz\ bg.jpg);
+    background-position-x: center;
+    background-size: cover;
 }
 
 /*Style for quiz container in center of page*/
