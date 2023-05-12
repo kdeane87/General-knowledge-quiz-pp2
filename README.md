@@ -144,32 +144,18 @@ Try Again Button
 - Upon checking everything was as expected.
 
 
-![Booking form](assets/images/form_image.png)
-
-
-Booking Form
-
-- Check that form works as expected and links to https://formdump.codeinstitute.net/
-
-- Upon checking everything was as expected.
-
-- Update: https://formdump.codeinstitute.net/ seems to be down 31/03/2023.
-
-
 
 **Lighthouse**
 
 
-![lighthouse of Homepage](assets/images/lighthouse_1.png)
-
-![lighthouse of Schedule](assets/images/lighthouse_2.png)
-
-![lighthouse of booking](assets/images/lighthouse_3.png)
+![lighthouse report](assets/images/lighthouse_test.png)
 
 
 **Accessibility**
 
-- All three pages were checked using https://wave.webaim.org/ and passed with no issues.
+- Quiz was checked using https://wave.webaim.org/ and had the following issues which dosent impact functionality and are not of particular importance for this particular javascript project.
+
+![webaim report](assets/images/webaim.png)
 
 
 ## Libraries and Programmes
