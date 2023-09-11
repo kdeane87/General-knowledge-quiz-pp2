@@ -18,7 +18,7 @@ let score = 0;
 const listOfQuestions = [{
     question: "Blondie was the name of the dog belonging to which dictator?",
     answers: [{
-        text: "Stalin",
+        text: "Olga Dy",
         correct: false,
       },
       {
@@ -144,7 +144,7 @@ const listOfQuestions = [{
     ],
   },
   {
-    question: " Ganymede is the largest moon of which planet? ",
+    question: " Happy now? ",
     answers: [{
         text: "Neptune",
         correct: false,
@@ -154,7 +154,7 @@ const listOfQuestions = [{
         correct: false,
       },
       {
-        text: "Jupitor",
+        text: "Jupiter",
         correct: true,
       },
     ],
